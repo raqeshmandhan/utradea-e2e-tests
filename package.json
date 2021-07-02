@@ -1,0 +1,24 @@
+{
+  "name": "utradea-e2e-tests",
+  "version": "1.0.0",
+  "description": "This repository contains E2E tests for Utradea.com. The tests are wirtten in Cypress and the Automation framework is designed using Project Object Model (POM) Pattern.",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raqeshmandhan/utradea-e2e-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raqeshmandhan/utradea-e2e-tests/issues"
+  },
+  "homepage": "https://github.com/raqeshmandhan/utradea-e2e-tests#readme",
+  "devDependencies": {
+    "cypress": "^7.6.0"
+  }
+}
