@@ -1,3 +1,7 @@
 {
-    "baseUrl" : "https://beta.utradea.com/"
+    "baseUrl" : "https://beta.utradea.com/",
+    "pageLoadTimeout" : 120000,
+    "viewportWidth" : 1280,
+    "viewportHeight": 720,
+    "watchForFileChanges" : false
 }

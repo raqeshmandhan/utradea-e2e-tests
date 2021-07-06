@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', (email , password) => {
+    cy.get('#field1').type(email);
+    cy.get('.login-form-root > :nth-child(3) > .MuiInputBase-root > .MuiInputBase-input').type(password);
+    cy.get('.frcb > .MuiButtonBase-root > .MuiButton-label').click();
+});

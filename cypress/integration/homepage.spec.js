@@ -3,12 +3,21 @@ const { Homepage } = require("../pages/Homepage");
 describe('Home Page Testing' , () => {
     const homepage = new Homepage();
     
-    beforeEach(() => { 
+    before(() => { 
         homepage.navigate();
     });
 
-    it('should have register button' , () => {
-        homepage.buttonsAvailable();
+    it('should have Register button' , () => {
+        homepage.registerButtonAvailable();
+    });
+
+    it('should have Login button' , () => {
+        homepage.LoginButtonAvailable();
+    });
+
+    it('Should Login to the system', () => {
+        homepage.clickLogin();
+        cy.login('rachelgreen', 'Password.1234');
     });
 
 });
